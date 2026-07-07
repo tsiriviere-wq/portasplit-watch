@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: portasplit-watch
@@ -34,9 +35,18 @@ jobs:
       - name: Verifier le stock
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          NTFY_EMAIL: ${{ secrets.NTFY_EMAIL }}
           MODE: ${{ steps.mode.outputs.mode }}
         run: python3 check.py
+
+      - name: Ouvrir une issue en cas d'alerte (e-mail GitHub)
+        if: ${{ hashFiles('alert-issue.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title=$(head -n 1 alert-issue.md)
+          tail -n +2 alert-issue.md > body.md
+          gh issue create --title "$title" --body-file body.md
+          rm -f alert-issue.md body.md
 
       - name: Committer l'etat si modifie
         run: |

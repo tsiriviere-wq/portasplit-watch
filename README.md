@@ -11,7 +11,8 @@ avec alerte push (ntfy) + e-mail dès qu'il repasse en stock à **999 € ou moi
   (7 enseignes en ligne : Leroy Merlin, Castorama, Boulanger, Darty, Fnac, ManoMano, Amazon
   + comptage des magasins physiques).
 - Sur transition rupture → en stock (≤ 999 €) : notification **ntfy** haute priorité
-  (canal privé, secret `NTFY_TOPIC`) + copie e-mail. Anti-spam : 6 h de délai par enseigne.
+  (canal privé, secret `NTFY_TOPIC`) + ouverture d'une **issue GitHub** (→ e-mail de
+  notification GitHub). Anti-spam : 6 h de délai par enseigne.
 - Bilan quotidien vers 9h (heure de Paris) : « PortaSplitWatch OK » ou « EN PANNE ».
 - [Mini-app](index.html) hébergée sur GitHub Pages : état en direct + liens vers les fiches.
 

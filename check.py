@@ -26,7 +26,9 @@ NTFY_URL = "https://ntfy.sh"
 PRODUCT = "portasplit"
 MAX_PRICE = 999
 COOLDOWN_HOURS = 6
-ALERT_EMAIL = os.environ.get("NTFY_EMAIL", "")  # secret GitHub : jamais dans le code public
+# En cas d'alerte, ce fichier est cree ; le workflow ouvre alors une issue GitHub
+# (GitHub envoie un e-mail de notification au proprietaire du depot).
+ALERT_ISSUE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "alert-issue.md")
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
 PARIS = _PARIS
 UA = "PortaSplitWatch/1.0 (veille stock personnelle)"
@@ -102,8 +104,7 @@ def count_stores_in_stock(api: dict) -> int:
     return count
 
 
-def notify(title: str, message: str, priority: int = 3,
-           click: str = "", email: bool = False) -> bool:
+def notify(title: str, message: str, priority: int = 3, click: str = "") -> bool:
     if not TOPIC:
         print("ERREUR: NTFY_TOPIC absent, notification impossible")
         return False
@@ -111,8 +112,6 @@ def notify(title: str, message: str, priority: int = 3,
                "priority": priority, "tags": ["air_conditioner"]}
     if click:
         payload["click"] = click
-    if email and ALERT_EMAIL:
-        payload["email"] = ALERT_EMAIL
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(NTFY_URL, data=data, headers={
         "Content-Type": "application/json", "User-Agent": UA})
@@ -185,7 +184,7 @@ def main() -> int:
         if not first_run and o["inStock"] and not was_in_stock and price_ok and cooldown_ok:
             alerts.append(o)
 
-    # --- notification d'alerte (push haute priorite + e-mail) ---
+    # --- notification d'alerte (push haute priorite + issue GitHub -> e-mail) ---
     alert_sent = False
     if alerts:
         names = ", ".join(a["name"] for a in alerts)
@@ -194,7 +193,14 @@ def main() -> int:
         alert_sent = notify(
             f"PortaSplit DISPONIBLE : {names}",
             "\n\n".join(body_lines),
-            priority=5, click=alerts[0]["url"], email=True)
+            priority=5, click=alerts[0]["url"])
+        # issue GitHub creee par le workflow -> e-mail de notification GitHub
+        with open(ALERT_ISSUE_FILE, "w", encoding="utf-8") as fh:
+            fh.write(f"PortaSplit DISPONIBLE : {names}\n")
+            for a in alerts:
+                fh.write(f"\n- **{a['name']}** : {price_txt(a['price'])} — [fiche produit]({a['url']})")
+            fh.write(f"\n\nDetecte le {ts.strftime('%d/%m/%Y %H:%M')} (heure de Paris). "
+                     "Stock tres volatil : commander vite !\n")
 
     # --- notifications de mode ---
     if MODE == "manual":
