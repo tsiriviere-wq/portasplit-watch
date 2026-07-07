@@ -1,17 +1,11 @@
 {
-  "updatedAt": "2026-07-07T14:16:49.453115+02:00",
+  "updatedAt": "2026-07-07T14:40:02.213169+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
       "inStock": false,
       "price": 999,
       "url": "https://www.castorama.fr/climatiseur-portasplit-midea-reversible-3500w/8431312260509_CAFR.prd"
-    },
-    "Boulanger": {
-      "name": "Boulanger",
-      "inStock": false,
-      "price": 999,
-      "url": "https://www.boulanger.com/ref/1216685"
     },
     "Amazon": {
       "name": "Amazon",
