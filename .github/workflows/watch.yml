@@ -1,0 +1,51 @@
+name: PortaSplit Watch
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # verification (latence GitHub reelle : 5 a 20 min)
+    - cron: '0 7 * * *'     # heartbeat quotidien (~9h Paris l'ete, 8h l'hiver)
+  workflow_dispatch:         # verification manuelle depuis le telephone
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portasplit-watch
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determiner le mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=manual" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 7 * * *" ]; then
+            echo "mode=heartbeat" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=check" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Verifier le stock
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_EMAIL: ${{ secrets.NTFY_EMAIL }}
+          MODE: ${{ steps.mode.outputs.mode }}
+        run: python3 check.py
+
+      - name: Committer l'etat si modifie
+        run: |
+          if ! git diff --quiet state.json 2>/dev/null; then
+            git config user.name  "portasplit-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add state.json
+            git commit -m "maj stock $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "state.json inchange"
+          fi
