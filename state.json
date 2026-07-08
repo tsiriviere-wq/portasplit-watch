@@ -1,18 +1,24 @@
 {
-  "updatedAt": "2026-07-08T10:01:22.053301+02:00",
+  "updatedAt": "2026-07-08T14:08:02.926168+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
-      "inStock": false,
+      "inStock": true,
       "price": 949,
       "url": "https://www.castorama.fr/climatiseur-portasplit-midea-reversible-3500w/8431312260509_CAFR.prd",
-      "lastAlert": "2026-07-08T01:40:12.174713+02:00"
+      "lastAlert": "2026-07-08T14:08:02.926168+02:00"
+    },
+    "Amazon": {
+      "name": "Amazon",
+      "inStock": false,
+      "price": null,
+      "url": "https://www.amazon.fr/dp/B0CY2YW8BT"
     },
     "Optimea": {
       "name": "Optimea",
       "inStock": false,
       "price": null,
-      "url": ""
+      "url": "https://www.optimea.fr/product/seconde-vie-climatiseur-split-mobile-midea-silencieux-reversible-sans-installation/"
     },
     "Leroy Merlin": {
       "name": "Leroy Merlin",
@@ -39,7 +45,7 @@
       "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402"
     }
   },
-  "storesInStock": 1,
+  "storesInStock": 3,
   "product": "Midea PortaSplit 12000 BTU (MMCS-12HRN8-QRD0)",
   "maxPrice": 999
 }
