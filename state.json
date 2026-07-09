@@ -1,12 +1,30 @@
 {
-  "updatedAt": "2026-07-08T22:41:02.112586+02:00",
+  "updatedAt": "2026-07-09T10:55:56.203460+02:00",
   "entries": {
+    "Leroy Merlin": {
+      "name": "Leroy Merlin",
+      "inStock": false,
+      "price": 999,
+      "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html"
+    },
     "Castorama": {
       "name": "Castorama",
       "inStock": false,
       "price": 949,
       "url": "https://www.castorama.fr/climatiseur-portasplit-midea-reversible-3500w/8431312260509_CAFR.prd",
       "lastAlert": "2026-07-08T14:08:02.926168+02:00"
+    },
+    "Darty": {
+      "name": "Darty",
+      "inStock": false,
+      "price": null,
+      "url": "https://www.darty.com/nav/achat/gros_electromenager/chauffage_climatisation/climatiseur/midea_mmcs-12hrn8-qrd0.html"
+    },
+    "Fnac": {
+      "name": "Fnac",
+      "inStock": false,
+      "price": 989.99,
+      "url": "https://www.fnac.com/a21457105"
     },
     "ManoMano": {
       "name": "ManoMano",
@@ -25,27 +43,9 @@
       "inStock": false,
       "price": null,
       "url": "https://www.optimea.fr/product/seconde-vie-climatiseur-split-mobile-midea-silencieux-reversible-sans-installation/"
-    },
-    "Leroy Merlin": {
-      "name": "Leroy Merlin",
-      "inStock": false,
-      "price": 999,
-      "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html"
-    },
-    "Darty": {
-      "name": "Darty",
-      "inStock": false,
-      "price": null,
-      "url": "https://www.darty.com/nav/achat/gros_electromenager/chauffage_climatisation/climatiseur/midea_mmcs-12hrn8-qrd0.html"
-    },
-    "Fnac": {
-      "name": "Fnac",
-      "inStock": false,
-      "price": 989.99,
-      "url": "https://www.fnac.com/a21457105"
     }
   },
-  "storesInStock": 3,
+  "storesInStock": 1,
   "product": "Midea PortaSplit 12000 BTU (MMCS-12HRN8-QRD0)",
   "maxPrice": 999
 }
