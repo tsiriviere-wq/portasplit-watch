@@ -1,24 +1,18 @@
 {
-  "updatedAt": "2026-07-10T18:07:06.584697+02:00",
+  "updatedAt": "2026-07-10T23:33:50.200204+02:00",
   "entries": {
+    "Leroy Merlin": {
+      "name": "Leroy Merlin",
+      "inStock": false,
+      "price": 999,
+      "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html"
+    },
     "Castorama": {
       "name": "Castorama",
       "inStock": false,
       "price": 949,
       "url": "https://www.castorama.fr/climatiseur-portasplit-midea-reversible-3500w/8431312260509_CAFR.prd",
       "lastAlert": "2026-07-08T14:08:02.926168+02:00"
-    },
-    "ManoMano": {
-      "name": "ManoMano",
-      "inStock": false,
-      "price": null,
-      "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402"
-    },
-    "Leroy Merlin": {
-      "name": "Leroy Merlin",
-      "inStock": false,
-      "price": 999,
-      "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html"
     },
     "Darty": {
       "name": "Darty",
@@ -29,8 +23,14 @@
     "Fnac": {
       "name": "Fnac",
       "inStock": false,
-      "price": null,
+      "price": 989.99,
       "url": "https://www.fnac.com/a21457105"
+    },
+    "ManoMano": {
+      "name": "ManoMano",
+      "inStock": false,
+      "price": null,
+      "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402"
     }
   },
   "storesInStock": 0,
