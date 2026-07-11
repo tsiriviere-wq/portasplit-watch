@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-07-10T23:33:50.200204+02:00",
+  "updatedAt": "2026-07-11T08:03:54.043278+02:00",
   "entries": {
     "Leroy Merlin": {
       "name": "Leroy Merlin",
       "inStock": false,
-      "price": 999,
+      "price": null,
       "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html"
     },
     "Castorama": {
@@ -23,7 +23,7 @@
     "Fnac": {
       "name": "Fnac",
       "inStock": false,
-      "price": 989.99,
+      "price": null,
       "url": "https://www.fnac.com/a21457105"
     },
     "ManoMano": {
@@ -31,6 +31,12 @@
       "inStock": false,
       "price": null,
       "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402"
+    },
+    "Group Sumi": {
+      "name": "Group Sumi",
+      "inStock": false,
+      "price": null,
+      "url": "https://groupsumi.fr/chauffage/climatisation/climatiseur-mobile/climatiseur-et-deshumidificateur-portable-4-en-1-midea-portasplit-3-5-kw-13907811"
     }
   },
   "storesInStock": 0,
