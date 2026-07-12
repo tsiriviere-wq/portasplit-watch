@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T09:48:40.295804+02:00",
+  "updatedAt": "2026-07-12T13:35:03.141584+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
@@ -35,7 +35,7 @@
     "Fnac": {
       "name": "Fnac",
       "inStock": false,
-      "price": 989.99,
+      "price": null,
       "url": "https://www.fnac.com/a21457105"
     }
   },
