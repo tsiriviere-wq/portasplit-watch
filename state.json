@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T22:28:43.236174+02:00",
+  "updatedAt": "2026-07-12T09:48:40.295804+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
@@ -13,12 +13,6 @@
       "inStock": false,
       "price": null,
       "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402"
-    },
-    "Amazon": {
-      "name": "Amazon",
-      "inStock": false,
-      "price": null,
-      "url": "https://www.amazon.fr/dp/B0CY2YW8BT"
     },
     "Group Sumi": {
       "name": "Group Sumi",
