@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T19:02:10.600225+02:00",
+  "updatedAt": "2026-07-14T09:22:18.388846+02:00",
   "entries": {
     "Leroy Merlin": {
       "name": "Leroy Merlin",
@@ -23,7 +23,7 @@
     "Fnac": {
       "name": "Fnac",
       "inStock": false,
-      "price": 989.99,
+      "price": null,
       "url": "https://www.fnac.com/a21457105"
     },
     "ManoMano": {
@@ -39,7 +39,7 @@
       "url": "https://groupsumi.fr/chauffage/climatisation/climatiseur-mobile/climatiseur-et-deshumidificateur-portable-4-en-1-midea-portasplit-3-5-kw-13907811"
     }
   },
-  "storesInStock": 0,
+  "storesInStock": 1,
   "product": "Midea PortaSplit 12000 BTU (MMCS-12HRN8-QRD0)",
   "maxPrice": 999
 }
