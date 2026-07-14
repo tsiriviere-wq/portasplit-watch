@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T09:22:18.388846+02:00",
+  "updatedAt": "2026-07-14T14:00:25.882411+02:00",
   "entries": {
     "Leroy Merlin": {
       "name": "Leroy Merlin",
@@ -32,6 +32,12 @@
       "price": null,
       "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402"
     },
+    "Amazon": {
+      "name": "Amazon",
+      "inStock": false,
+      "price": null,
+      "url": "https://www.amazon.fr/dp/B0CY2YW8BT"
+    },
     "Group Sumi": {
       "name": "Group Sumi",
       "inStock": false,
@@ -39,7 +45,7 @@
       "url": "https://groupsumi.fr/chauffage/climatisation/climatiseur-mobile/climatiseur-et-deshumidificateur-portable-4-en-1-midea-portasplit-3-5-kw-13907811"
     }
   },
-  "storesInStock": 1,
+  "storesInStock": 0,
   "product": "Midea PortaSplit 12000 BTU (MMCS-12HRN8-QRD0)",
   "maxPrice": 999
 }
