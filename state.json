@@ -1,41 +1,42 @@
 {
-  "updatedAt": "2026-07-16T14:10:27.518768+02:00",
+  "updatedAt": "2026-07-16T15:05:47.998716+02:00",
   "entries": {
-    "Castorama": {
-      "name": "Castorama",
-      "inStock": false,
-      "price": 949,
-      "url": "https://www.castorama.fr/climatiseur-portasplit-midea-reversible-3500w/8431312260509_CAFR.prd"
-    },
-    "Fnac": {
-      "name": "Fnac",
-      "inStock": false,
-      "price": null,
-      "url": "https://www.fnac.com/a21457105"
-    },
-    "ManoMano": {
-      "name": "ManoMano",
-      "inStock": false,
-      "price": null,
-      "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402"
-    },
-    "Group Sumi": {
-      "name": "Group Sumi",
-      "inStock": false,
-      "price": null,
-      "url": "https://groupsumi.fr/chauffage/climatisation/climatiseur-mobile/climatiseur-et-deshumidificateur-portable-4-en-1-midea-portasplit-3-5-kw-13907811"
-    },
     "Leroy Merlin": {
       "name": "Leroy Merlin",
       "inStock": false,
       "price": null,
       "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html"
     },
+    "Castorama": {
+      "name": "Castorama",
+      "inStock": false,
+      "price": 949,
+      "url": "https://www.castorama.fr/climatiseur-portasplit-midea-reversible-3500w/8431312260509_CAFR.prd"
+    },
     "Darty": {
       "name": "Darty",
       "inStock": false,
       "price": null,
       "url": "https://www.darty.com/nav/achat/gros_electromenager/chauffage_climatisation/climatiseur/midea_mmcs-12hrn8-qrd0.html"
+    },
+    "Fnac": {
+      "name": "Fnac",
+      "inStock": false,
+      "price": 989.99,
+      "url": "https://www.fnac.com/a21457105"
+    },
+    "ManoMano": {
+      "name": "ManoMano",
+      "inStock": true,
+      "price": 999,
+      "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402",
+      "lastAlert": "2026-07-16T15:05:47.998716+02:00"
+    },
+    "Group Sumi": {
+      "name": "Group Sumi",
+      "inStock": false,
+      "price": null,
+      "url": "https://groupsumi.fr/chauffage/climatisation/climatiseur-mobile/climatiseur-et-deshumidificateur-portable-4-en-1-midea-portasplit-3-5-kw-13907811"
     }
   },
   "storesInStock": 0,
