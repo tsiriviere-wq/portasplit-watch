@@ -1,17 +1,11 @@
 {
-  "updatedAt": "2026-07-19T20:42:07.422245+02:00",
+  "updatedAt": "2026-07-19T23:36:53.114725+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
       "inStock": false,
       "price": 949,
       "url": "https://www.castorama.fr/climatiseur-portasplit-midea-reversible-3500w/8431312260509_CAFR.prd"
-    },
-    "Darty": {
-      "name": "Darty",
-      "inStock": false,
-      "price": null,
-      "url": "https://www.darty.com/nav/achat/gros_electromenager/chauffage_climatisation/climatiseur/midea_mmcs-12hrn8-qrd0.html"
     },
     "Fnac": {
       "name": "Fnac",
@@ -26,6 +20,12 @@
       "url": "https://www.manomano.fr/p/midea-climatiseur-split-mobile-reversible-froid-chaud-3500w12000btu-wifi-deshumidificateur-ventilateur-jusqua-40m2-kit-fenetre-inclus-83810402",
       "lastAlert": "2026-07-16T15:05:47.998716+02:00"
     },
+    "Amazon": {
+      "name": "Amazon",
+      "inStock": false,
+      "price": null,
+      "url": "https://www.amazon.fr/dp/B0CY2YW8BT"
+    },
     "Group Sumi": {
       "name": "Group Sumi",
       "inStock": false,
@@ -37,6 +37,12 @@
       "inStock": false,
       "price": null,
       "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html"
+    },
+    "Darty": {
+      "name": "Darty",
+      "inStock": false,
+      "price": null,
+      "url": "https://www.darty.com/nav/achat/gros_electromenager/chauffage_climatisation/climatiseur/midea_mmcs-12hrn8-qrd0.html"
     }
   },
   "storesInStock": 0,
