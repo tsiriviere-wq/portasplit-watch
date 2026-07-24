@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T14:06:21.300901+02:00",
+  "updatedAt": "2026-07-24T22:04:48.624660+02:00",
   "entries": {
     "Leroy Merlin": {
       "name": "Leroy Merlin",
@@ -28,7 +28,7 @@
     "Fnac": {
       "name": "Fnac",
       "inStock": false,
-      "price": 989.99,
+      "price": null,
       "url": "https://www.fnac.com/a21457105"
     },
     "ManoMano": {
