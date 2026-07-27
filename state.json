@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T18:02:12.047881+02:00",
+  "updatedAt": "2026-07-27T20:01:10.466446+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
@@ -16,7 +16,7 @@
     "Fnac": {
       "name": "Fnac",
       "inStock": false,
-      "price": 989.99,
+      "price": null,
       "url": "https://www.fnac.com/a21457105"
     },
     "ManoMano": {
@@ -28,8 +28,8 @@
     },
     "Amazon": {
       "name": "Amazon",
-      "inStock": true,
-      "price": 1299.99,
+      "inStock": false,
+      "price": null,
       "url": "https://www.amazon.fr/dp/B0CY2YW8BT"
     },
     "Group Sumi": {
