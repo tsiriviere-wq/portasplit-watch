@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T14:00:32.376365+02:00",
+  "updatedAt": "2026-07-27T18:02:12.047881+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
@@ -28,8 +28,8 @@
     },
     "Amazon": {
       "name": "Amazon",
-      "inStock": false,
-      "price": null,
+      "inStock": true,
+      "price": 1299.99,
       "url": "https://www.amazon.fr/dp/B0CY2YW8BT"
     },
     "Group Sumi": {
@@ -43,13 +43,6 @@
       "inStock": false,
       "price": null,
       "url": "https://www.darty.com/nav/achat/gros_electromenager/chauffage_climatisation/climatiseur/midea_mmcs-12hrn8-qrd0.html"
-    },
-    "Leroy Merlin": {
-      "name": "Leroy Merlin",
-      "inStock": true,
-      "price": 999,
-      "url": "https://www.leroymerlin.fr/produits/climatiseur-split-mobile-reversible-portasplit-midea-par-optimea-93857579.html",
-      "lastAlert": "2026-07-27T14:00:32.376365+02:00"
     }
   },
   "storesInStock": 0,
