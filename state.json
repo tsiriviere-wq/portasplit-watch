@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T20:01:10.466446+02:00",
+  "updatedAt": "2026-07-27T23:52:24.379731+02:00",
   "entries": {
     "Castorama": {
       "name": "Castorama",
@@ -16,7 +16,7 @@
     "Fnac": {
       "name": "Fnac",
       "inStock": false,
-      "price": null,
+      "price": 989.99,
       "url": "https://www.fnac.com/a21457105"
     },
     "ManoMano": {
